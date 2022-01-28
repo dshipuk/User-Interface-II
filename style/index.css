@@ -55,7 +55,7 @@ table {
     margin: 0;
     max-width:100%;
   /*put a border around everything to see where it stops and starts*/
-	/* border:1px solid red; */
+	border:1px solid red;
 }
 
 
@@ -126,4 +126,55 @@ footer button{
 
 .portfolio-element{
 	text-align: center;
+}
+
+@media(max-width: 800px){
+	.row div{
+		width: 20%;
+	}
+	.top img{
+		width: 40%;
+		margin: 0 2%;
+	}
+}
+@media(max-width: 500px){
+	header{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	nav{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	button{
+		margin:1% 0;
+	}
+	.top{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.description{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 90%;
+	}
+
+	.row{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.row div{
+		width: 40%;
+		margin: 2% 0;
+	}
 }
